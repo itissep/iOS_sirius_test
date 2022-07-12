@@ -8,14 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2C666AA9287E063A0070F558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AA8287E063A0070F558 /* AppDelegate.swift */; };
-		2C666AAB287E063A0070F558 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AAA287E063A0070F558 /* SceneDelegate.swift */; };
 		2C666AAD287E063A0070F558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AAC287E063A0070F558 /* ViewController.swift */; };
-		2C666AB0287E063A0070F558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C666AAE287E063A0070F558 /* Main.storyboard */; };
 		2C666AB2287E063C0070F558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C666AB1287E063C0070F558 /* Assets.xcassets */; };
 		2C666AB5287E063C0070F558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C666AB3287E063C0070F558 /* LaunchScreen.storyboard */; };
-		2C666AC0287E063D0070F558 /* iOS_sirius_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666ABF287E063D0070F558 /* iOS_sirius_testTests.swift */; };
-		2C666ACA287E063D0070F558 /* iOS_sirius_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AC9287E063D0070F558 /* iOS_sirius_testUITests.swift */; };
-		2C666ACC287E063D0070F558 /* iOS_sirius_testUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666ACB287E063D0070F558 /* iOS_sirius_testUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +33,12 @@
 /* Begin PBXFileReference section */
 		2C666AA5287E063A0070F558 /* iOS_sirius_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_sirius_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C666AA8287E063A0070F558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C666AAA287E063A0070F558 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2C666AAC287E063A0070F558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2C666AAF287E063A0070F558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C666AB1287E063C0070F558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C666AB4287E063C0070F558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C666AB6287E063C0070F558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C666ABB287E063D0070F558 /* iOS_sirius_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_sirius_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C666ABF287E063D0070F558 /* iOS_sirius_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_sirius_testTests.swift; sourceTree = "<group>"; };
 		2C666AC5287E063D0070F558 /* iOS_sirius_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_sirius_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C666AC9287E063D0070F558 /* iOS_sirius_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_sirius_testUITests.swift; sourceTree = "<group>"; };
-		2C666ACB287E063D0070F558 /* iOS_sirius_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_sirius_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				2C666AA7287E063A0070F558 /* iOS_sirius_test */,
-				2C666ABE287E063D0070F558 /* iOS_sirius_testTests */,
-				2C666AC8287E063D0070F558 /* iOS_sirius_testUITests */,
 				2C666AA6287E063A0070F558 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,31 +88,12 @@
 			isa = PBXGroup;
 			children = (
 				2C666AA8287E063A0070F558 /* AppDelegate.swift */,
-				2C666AAA287E063A0070F558 /* SceneDelegate.swift */,
 				2C666AAC287E063A0070F558 /* ViewController.swift */,
-				2C666AAE287E063A0070F558 /* Main.storyboard */,
 				2C666AB1287E063C0070F558 /* Assets.xcassets */,
 				2C666AB3287E063C0070F558 /* LaunchScreen.storyboard */,
 				2C666AB6287E063C0070F558 /* Info.plist */,
 			);
 			path = iOS_sirius_test;
-			sourceTree = "<group>";
-		};
-		2C666ABE287E063D0070F558 /* iOS_sirius_testTests */ = {
-			isa = PBXGroup;
-			children = (
-				2C666ABF287E063D0070F558 /* iOS_sirius_testTests.swift */,
-			);
-			path = iOS_sirius_testTests;
-			sourceTree = "<group>";
-		};
-		2C666AC8287E063D0070F558 /* iOS_sirius_testUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2C666AC9287E063D0070F558 /* iOS_sirius_testUITests.swift */,
-				2C666ACB287E063D0070F558 /* iOS_sirius_testUITestsLaunchTests.swift */,
-			);
-			path = iOS_sirius_testUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +202,6 @@
 			files = (
 				2C666AB5287E063C0070F558 /* LaunchScreen.storyboard in Resources */,
 				2C666AB2287E063C0070F558 /* Assets.xcassets in Resources */,
-				2C666AB0287E063A0070F558 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +228,6 @@
 			files = (
 				2C666AAD287E063A0070F558 /* ViewController.swift in Sources */,
 				2C666AA9287E063A0070F558 /* AppDelegate.swift in Sources */,
-				2C666AAB287E063A0070F558 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C666AC0287E063D0070F558 /* iOS_sirius_testTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +242,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C666ACA287E063D0070F558 /* iOS_sirius_testUITests.swift in Sources */,
-				2C666ACC287E063D0070F558 /* iOS_sirius_testUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +261,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2C666AAE287E063A0070F558 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2C666AAF287E063A0070F558 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2C666AB3287E063C0070F558 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +398,6 @@
 				INFOPLIST_FILE = iOS_sirius_test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +425,6 @@
 				INFOPLIST_FILE = iOS_sirius_test/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
