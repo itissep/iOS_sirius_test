@@ -6,18 +6,18 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ServiceCell: UITableViewCell{
 
     static let reusableId = "ServiceCell"
     var serviceItem: Service?
     
+    
     lazy var image: UIImageView = {
         let image = UIImageView()
-        image.layer.cornerRadius = 10
         image.clipsToBounds = true
         image.image = UIImage(systemName: "home")
-        image.backgroundColor = .orange
         
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
@@ -65,7 +65,11 @@ class ServiceCell: UITableViewCell{
     func configure(model: Service) {
         self.titleLabel.text = model.name
         self.descriptionLabel.text = model.description
-//        self.image
+        let url = URL(string: model.icon_url)
+        if let url = url {
+            self.image.kf.setImage(with: url)
+        }
+        
         layout()
         
     }
@@ -104,6 +108,8 @@ class ServiceCell: UITableViewCell{
         self.titleLabel.text = nil
         self.descriptionLabel.text = nil
         // TODO: Reuse!!! for image
+        self.image.kf.cancelDownloadTask()
+        
         
       }
     
