@@ -63,6 +63,7 @@ class ServiceCell: UITableViewCell{
     
     
     func configure(model: Service) {
+        self.serviceItem = model
         self.titleLabel.text = model.name
         self.descriptionLabel.text = model.description
         let url = URL(string: model.icon_url)
