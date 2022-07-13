@@ -11,6 +11,9 @@
 		2C666AAD287E063A0070F558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AAC287E063A0070F558 /* ViewController.swift */; };
 		2C666AB2287E063C0070F558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C666AB1287E063C0070F558 /* Assets.xcassets */; };
 		2C666AB5287E063C0070F558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C666AB3287E063C0070F558 /* LaunchScreen.storyboard */; };
+		2C666AE2287E0CA80070F558 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AE1287E0CA80070F558 /* ServiceCell.swift */; };
+		2C666AE4287E0D650070F558 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AE3287E0D650070F558 /* Service.swift */; };
+		2C666AE6287E12380070F558 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AE5287E12380070F558 /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		2C666AB6287E063C0070F558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C666ABB287E063D0070F558 /* iOS_sirius_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_sirius_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C666AC5287E063D0070F558 /* iOS_sirius_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_sirius_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C666AE1287E0CA80070F558 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
+		2C666AE3287E0D650070F558 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2C666AE5287E12380070F558 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,13 +93,64 @@
 		2C666AA7287E063A0070F558 /* iOS_sirius_test */ = {
 			isa = PBXGroup;
 			children = (
-				2C666AA8287E063A0070F558 /* AppDelegate.swift */,
-				2C666AAC287E063A0070F558 /* ViewController.swift */,
-				2C666AB1287E063C0070F558 /* Assets.xcassets */,
-				2C666AB3287E063C0070F558 /* LaunchScreen.storyboard */,
 				2C666AB6287E063C0070F558 /* Info.plist */,
+				2C666AE0287E0BB80070F558 /* Storing */,
+				2C666ADF287E09060070F558 /* Networking */,
+				2C666ADE287E08E80070F558 /* View */,
+				2C666ADD287E08D30070F558 /* Controller */,
+				2C666ADC287E08CD0070F558 /* Model */,
+				2C666AD8287E089B0070F558 /* Other */,
 			);
 			path = iOS_sirius_test;
+			sourceTree = "<group>";
+		};
+		2C666AD8287E089B0070F558 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2C666AA8287E063A0070F558 /* AppDelegate.swift */,
+				2C666AB1287E063C0070F558 /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2C666ADC287E08CD0070F558 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C666AE3287E0D650070F558 /* Service.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C666ADD287E08D30070F558 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C666AAC287E063A0070F558 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C666ADE287E08E80070F558 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C666AE1287E0CA80070F558 /* ServiceCell.swift */,
+				2C666AB3287E063C0070F558 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C666ADF287E09060070F558 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2C666AE5287E12380070F558 /* NetworkingManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		2C666AE0287E0BB80070F558 /* Storing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C666AE6287E12380070F558 /* NetworkingManager.swift in Sources */,
+				2C666AE2287E0CA80070F558 /* ServiceCell.swift in Sources */,
+				2C666AE4287E0D650070F558 /* Service.swift in Sources */,
 				2C666AAD287E063A0070F558 /* ViewController.swift in Sources */,
 				2C666AA9287E063A0070F558 /* AppDelegate.swift in Sources */,
 			);
