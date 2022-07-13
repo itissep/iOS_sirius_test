@@ -38,7 +38,6 @@ class ViewController: UIViewController {
     }()
     
     func setupTableView(){
-        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -60,11 +59,10 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) as? ServiceCell else {
-            print("error")
+            print("something went wrong with cell")
             return
         }
         
-        print(cell.serviceItem?.link)
         guard let string = cell.serviceItem?.link, let url = URL(string: string) else {
             print("not a url")
             return
@@ -74,9 +72,7 @@ extension ViewController: UITableViewDelegate {
         //TODO: Check on iphone!!
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url)
-
         } else {
-            //redirect to safari because the user doesn't have Instagram
             UIApplication.shared.open(url)
         } 
     }

@@ -96,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				2C666AB6287E063C0070F558 /* Info.plist */,
-				2C666AE0287E0BB80070F558 /* Storing */,
 				2C666ADF287E09060070F558 /* Networking */,
 				2C666ADE287E08E80070F558 /* View */,
 				2C666ADD287E08D30070F558 /* Controller */,
@@ -146,13 +145,6 @@
 				2C666AE5287E12380070F558 /* NetworkingManager.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		2C666AE0287E0BB80070F558 /* Storing */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Storing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
