@@ -25,7 +25,6 @@ class ServiceCell: UITableViewCell{
         
         label.text = "Title label"
         label.numberOfLines = 1
-//        label.textColor = .sys
         
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -37,18 +36,10 @@ class ServiceCell: UITableViewCell{
         label.text = "Description label"
         label.numberOfLines = 3
         label.font = label.font.withSize(14)
-//        label.textColor = .white
         
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    
-    lazy var view: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -97,7 +88,7 @@ class ServiceCell: UITableViewCell{
             descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 0),
             descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
         ])
-
+        
         self.accessoryType = .disclosureIndicator
     }
     
@@ -112,7 +103,6 @@ class ServiceCell: UITableViewCell{
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-//        super.setSelected(selected, animated: animated)
     }
     
     func getHeight() -> CGFloat {

@@ -11,6 +11,15 @@ class MainVC: UIViewController {
     
     var services = [Service]()
     
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        
+        tableView.register(ServiceCell.self, forCellReuseIdentifier: ServiceCell.reusableId)
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Сервисы VK"
@@ -26,16 +35,6 @@ class MainVC: UIViewController {
         }
         setupTableView()
     }
-    
-    
-    lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        
-        tableView.register(ServiceCell.self, forCellReuseIdentifier: ServiceCell.reusableId)
-        
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        return tableView
-    }()
     
     
     func setupTableView(){

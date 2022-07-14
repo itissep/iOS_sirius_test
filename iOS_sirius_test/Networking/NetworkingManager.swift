@@ -29,14 +29,4 @@ struct NetworkingManager {
             task.resume()
         }
     }
-    
-    func parseJSON(_ data:Data){
-        let decoder = JSONDecoder()
-        do {
-            let decodedData = try decoder.decode(Response.self, from: data)
-            print(decodedData.body.services[4])
-        } catch {
-            print(error)
-        }
-    }
 }

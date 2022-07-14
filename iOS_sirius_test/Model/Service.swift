@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Service: Codable {
     let name: String
     let description: String
