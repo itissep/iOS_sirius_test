@@ -25,7 +25,7 @@ class ServiceCell: UITableViewCell{
         
         label.text = "Title label"
         label.numberOfLines = 1
-        label.textColor = .white
+//        label.textColor = .sys
         
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -37,7 +37,7 @@ class ServiceCell: UITableViewCell{
         label.text = "Description label"
         label.numberOfLines = 3
         label.font = label.font.withSize(14)
-        label.textColor = .white
+//        label.textColor = .white
         
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -94,9 +94,10 @@ class ServiceCell: UITableViewCell{
         NSLayoutConstraint.activate([
             descriptionLabel.leftAnchor.constraint(equalTo:  image.rightAnchor, constant: 10),
             descriptionLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -10),
-            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 5),
+            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 0),
+            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
         ])
-        
+
         self.accessoryType = .disclosureIndicator
     }
     
@@ -111,7 +112,7 @@ class ServiceCell: UITableViewCell{
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {
-        //super.setSelected(selected, animated: animated)
+//        super.setSelected(selected, animated: animated)
     }
     
     func getHeight() -> CGFloat {

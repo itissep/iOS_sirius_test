@@ -37,12 +37,13 @@ class ViewController: UIViewController {
         return tableView
     }()
     
+    
     func setupTableView(){
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
+        tableView.rowHeight = UITableView.automaticDimension
         
         view.addSubview(tableView)
         // tableView constraints
@@ -59,22 +60,20 @@ class ViewController: UIViewController {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) as? ServiceCell else {
-            print("something went wrong with cell")
+            print("Something went wrong with cell")
             return
         }
         
         guard let string = cell.serviceItem?.link, let url = URL(string: string) else {
-            print("not a url")
+            print("Not a url")
             return
         }
         
-        
-        //TODO: Check on iphone!!
         if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url)
         } else {
-            UIApplication.shared.open(url)
-        } 
+            print("Error with link")
+        }
     }
 }
 
@@ -88,7 +87,6 @@ extension ViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ServiceCell.reusableId) as? ServiceCell else {
             fatalError("unexpected cell")
         }
-        
         var cellModel: Service?
         
         cellModel = services[indexPath.row]
@@ -97,17 +95,5 @@ extension ViewController: UITableViewDataSource {
         }
         return cell
     }
-    
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        //        guard let cell = tableView.cellForRow(at: indexPath) as? ServiceCell else {
-        //            fatalError("cannot find this cell")
-        //        }
-        
-        //        return UITableView.automaticDimension
-        // TODO: dynamic height
-        return 80
-    }
-    
     
 }
