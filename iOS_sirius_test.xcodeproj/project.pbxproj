@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2C666AA9287E063A0070F558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AA8287E063A0070F558 /* AppDelegate.swift */; };
-		2C666AAD287E063A0070F558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AAC287E063A0070F558 /* ViewController.swift */; };
+		2C666AAD287E063A0070F558 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AAC287E063A0070F558 /* MainVC.swift */; };
 		2C666AB2287E063C0070F558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C666AB1287E063C0070F558 /* Assets.xcassets */; };
 		2C666AB5287E063C0070F558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C666AB3287E063C0070F558 /* LaunchScreen.storyboard */; };
 		2C666AE2287E0CA80070F558 /* ServiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AE1287E0CA80070F558 /* ServiceCell.swift */; };
 		2C666AE4287E0D650070F558 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AE3287E0D650070F558 /* Service.swift */; };
 		2C666AE6287E12380070F558 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AE5287E12380070F558 /* NetworkingManager.swift */; };
 		2C666AE9287EFEBB0070F558 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2C666AE8287EFEBB0070F558 /* Kingfisher */; };
-		2C666AEB28801CF20070F558 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AEA28801CF20070F558 /* MainView.swift */; };
+		2C666AEF288022840070F558 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C666AEE288022840070F558 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		2C666AA5287E063A0070F558 /* iOS_sirius_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_sirius_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C666AA8287E063A0070F558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2C666AAC287E063A0070F558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C666AAC287E063A0070F558 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		2C666AB1287E063C0070F558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C666AB4287E063C0070F558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C666AB6287E063C0070F558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		2C666AE1287E0CA80070F558 /* ServiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCell.swift; sourceTree = "<group>"; };
 		2C666AE3287E0D650070F558 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		2C666AE5287E12380070F558 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
-		2C666AEA28801CF20070F558 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		2C666AEE288022840070F558 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				2C666AE3287E0D650070F558 /* Service.swift */,
+				2C666AEE288022840070F558 /* Response.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -127,7 +128,7 @@
 		2C666ADD287E08D30070F558 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2C666AAC287E063A0070F558 /* ViewController.swift */,
+				2C666AAC287E063A0070F558 /* MainVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,7 +138,6 @@
 			children = (
 				2C666AE1287E0CA80070F558 /* ServiceCell.swift */,
 				2C666AB3287E063C0070F558 /* LaunchScreen.storyboard */,
-				2C666AEA28801CF20070F558 /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,11 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C666AE6287E12380070F558 /* NetworkingManager.swift in Sources */,
-				2C666AEB28801CF20070F558 /* MainView.swift in Sources */,
 				2C666AE2287E0CA80070F558 /* ServiceCell.swift in Sources */,
 				2C666AE4287E0D650070F558 /* Service.swift in Sources */,
-				2C666AAD287E063A0070F558 /* ViewController.swift in Sources */,
+				2C666AAD287E063A0070F558 /* MainVC.swift in Sources */,
 				2C666AA9287E063A0070F558 /* AppDelegate.swift in Sources */,
+				2C666AEF288022840070F558 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

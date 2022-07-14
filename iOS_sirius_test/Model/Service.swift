@@ -14,12 +14,3 @@ struct Service: Codable {
     let link: String
     let icon_url: String
 }
-
-
-struct Response: Codable {
-    let body: Body
-}
-
-struct Body: Codable {
-    let services: [Service]
-}
